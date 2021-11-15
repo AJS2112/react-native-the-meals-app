@@ -4,7 +4,6 @@ import { CATEGORIES } from '../data/dummy-data';
 import CategoryGridTitle from "../components/CategoryGridTitle";
 
 const CategoriesScreen = props => {
-    console.log(CATEGORIES)
     const renderGridItem = (itemData) => {
         return <CategoryGridTitle
             title={itemData.item.title}
@@ -25,7 +24,6 @@ const CategoriesScreen = props => {
 
 CategoriesScreen.navigationOptions = {
     headerTitle: 'Meal Categories'
-
 }
 
 const styles = StyleSheet.create({
